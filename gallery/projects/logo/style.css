@@ -1,0 +1,13 @@
+.grid1,
+.grid2 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+.grid {
+    gap: 6em;
+}
+
+#content {
+    padding-bottom: 7em;
+}

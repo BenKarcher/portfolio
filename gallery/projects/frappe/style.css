@@ -1,0 +1,51 @@
+#img1 {
+    margin-top: -5vw;
+}
+
+.row1 {
+    height: 43.5vw;
+    gap: 5vw;
+}
+
+.row1 img {
+    margin-top: -5vw;
+}
+
+#typography {
+    margin-top: -5vw;
+}
+
+.row2 {
+    height: 35vw;
+}
+
+#content {
+    padding-bottom: 7vw;
+}
+
+@media screen and (max-width: 749px) {
+
+    .row1 {
+        flex-direction: column-reverse;
+    }
+
+    .row1,
+    .row2 {
+        height: auto;
+    }
+
+    .row1 img,
+    .row2 img {
+        width: 80vw;
+    }
+
+    #content,
+    .row1,
+    .row2 {
+        gap: 2em;
+    }
+
+    #content {
+        padding-bottom: 4em;
+    }
+}

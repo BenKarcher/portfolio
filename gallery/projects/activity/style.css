@@ -1,0 +1,39 @@
+.row1 {
+    height: 43.5vw;
+    gap: 10vw;
+    position: relative;
+}
+
+.row1 #credit {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: gray;
+    font-size: 0.8em;
+}
+
+.row2 {
+    height: 44vw;
+    gap: 10vw;
+}
+
+@media screen and (max-width: 749px) {
+
+    .row1,
+    .row2 {
+        height: auto;
+    }
+
+    .row2 {
+        flex-direction: column-reverse;
+    }
+
+    .row1 img,
+    .row2 img {
+        width: 80vw;
+    }
+
+    #content {
+        gap: 2em;
+    }
+}

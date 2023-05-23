@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nescafe Ice Coffee Frappé</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/fik7cah.css">
+</head>
+
+<body>
+    <!-- Id opp gjør at scrolle opp knappen på bunnen fungerer -->
+    <p id="opp"></p>
+
+    <!-- navigasjonsbaren på toppen-->
+    <nav class="toppmeny">
+
+        <a href="index.html"> <img class="logo" src="./bilder/5ae22ce233b73fa43b1a892e-2.png"
+                alt="nescafe logo png transparent"> </a>
+
+
+    </nav>
+
+
+    <!-- div som gir hvit bakgrunn -->
+    <div class="hvit">
+
+        <!-- store bildet i starten av nettsiden -->
+        <img class="stor" src="bilder/updatedcolorboxes.png"
+            alt=" 3 3d modeller av nescafe ice coffee frappe redesign orginal jordbær og sjokolade">
+
+        <h1> Iskaffe På En Enkel Måte</h1>
+
+        <!-- scroll ned knapp -->
+        <img class="ikon" src="bilder/brunpilned.svg" onClick="document.getElementById('h2').scrollIntoView();" />
+        <p class="oldP center" id="h2">Scroll Ned</p> <br>
+
+        <main>
+
+            <h2>Oppdag Smakene</h2><br>
+
+            <!-- bildene av fremsiden av frappeskene som tar deg til sidene med produktinformasjon -->
+            <nav class="smak">
+
+                <a href="strawberry.html"><img src="./bilder/jordbarfremside.png" alt="Strawberry Frappé fremside"></a>
+                <a href="Icecoffeefrappe.html"><img src="./bilder/orginalfremside.png"
+                        alt="Ice Coffee Frappé fremside"></a>
+                <a href="chocolate.html"><img src="./bilder/sjokoladefremside.png" alt="Chocolate Frappé fremside"></a>
+
+
+                <h3>Jordbær</h3>
+                <h3>Orginal</h3>
+                <h3>Sjokolade</h3>
+            </nav>
+
+
+            <h2>Stem På Din Favoritt! <br> Vinn 1 Års Forbruk!</h2>
+            <p class="oldP">Stem på din favorittsmak og bli med i trekningen av 1 års forbruk av din favoritt!
+                Deltager må være over 18 år. <br> <br></p>
+
+            <!--  Skrivefelter med navn, epost of telefonnummer -->
+            <form id="vote" action="/action_page.php">
+                <label for="fname">
+                    <p class="formtext">Fult navn</p>
+                </label>
+                <input type="text" id="fname" name="fname"><br> <br>
+                <label for="email">
+                    <p class="formtext">Epost</p>
+                </label>
+                <input type="text" id="email" name="email"><br><br>
+
+                <label for="number">
+                    <p class="formtext">Telefonnummer</p>
+                </label>
+                <input type="text" id="number" name="number"><br><br>
+
+                <!-- radioknappene -->
+                <div class="container">
+                    <div class="option strawberry">
+                        <label>
+                            <input type="radio" name="radio" checked />
+                            <span>Strawberry Frappé</span>
+                        </label>
+                        <img height="1px" src="bilder/pawel-czerwinski-aWyUQtm1E7w-unsplash.jpg" alt="pink pattern">
+                    </div>
+                    <div class="option original">
+
+                        <label>
+                            <input type="radio" name="radio" />
+                            <span>Ice Coffee Frappé</span>
+                        </label>
+
+                        <!-- måtte lage bildene 1 pixel slik at de kunne bli større label ble 
+                    større uten at bildene selv gjorde den større-->
+                        <img height="1px" src="bilder/orginalkaffe.png" alt="coffee">
+                    </div>
+                    <div class="option Chocolate">
+                        <label>
+                            <input type="radio" name="radio" />
+                            <span>Chocolate Frappé</span>
+                        </label>
+                        <img height="1px" src="bilder/sjokoladekaffe.png" alt="coffee">
+                    </div>
+
+                    <!-- send inn knapp -->
+                    <input class="button" type="submit" value="Send Inn" />
+
+                </div>
+
+            </form>
+            <br> <br><br>
+
+            <!-- siste avsnitt -->
+            <h2>Økonomisk Frappé</h2>
+            <p class="oldP">Med vår kaffe får du iskaffe for 37 kroner. Dette betyr at hver kopp koster 4.6 kroner. Våre
+                konkurrenter
+                selger sin kaffe for rundt 16 kroner koppen. Unn deg noe godt, men vær økonomisk! Da får du mer godt for
+                pengene!</p>
+
+            <h4>37,-</h4>
+            <br><br>
+
+        </main>
+
+        <!-- footeren med bølger-->
+        <img id="coffeFoot" src="bilder/bolgerkaffe-01.png" alt="frappe bølger">
+        <div id="bottomButton">
+
+            <!-- scroll opp knapp -->
+            <img class="ikonopp" src="bilder/pilopphvit.svg"
+                onClick="document.getElementById('opp').scrollIntoView();" />
+            <p class="ikonopptekst">Til Toppen</p>
+        </div>
+    </div>
+</body>
+
+
+</html>

@@ -1,0 +1,47 @@
+.row1 {
+    height: 50vw;
+}
+
+.row1 img {
+    transform: translate(5vw, -5vw)rotate(30deg);
+}
+
+.row2 {
+    /* text-align: right; */
+    height: 40vw;
+    gap: 10vw
+}
+
+.row3 {
+    height: 23vw;
+}
+
+@media screen and (max-width: 749px) {
+
+    .row1,
+    .row2,
+    .row3 {
+        height: auto;
+    }
+
+    .row1 img {
+        transform: rotate(30deg);
+    }
+
+    .row1 img,
+    .row2 img,
+    .row3 img {
+        width: 80vw;
+    }
+
+    #content,
+    .row1,
+    .row3 {
+        gap: 2em;
+    }
+
+    #odin-logo {
+        margin-top: 0.5em;
+        margin-bottom: 2em;
+    }
+}

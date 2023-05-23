@@ -1,0 +1,53 @@
+.row1 {
+    min-height: 43.5vw;
+}
+
+.row1 img {
+    max-height: 43.5vw;
+    margin-right: -10vw;
+    margin-top: -5vw;
+}
+
+.row2 {
+    min-height: 42vw;
+}
+
+.row2 img {
+    max-height: 42vw;
+}
+
+.row2>div {
+    margin-top: 5vw;
+}
+
+.row3 {
+    height: 28vw;
+}
+
+@media screen and (max-width: 749px) {
+    .row1 img {
+        max-height: none;
+        width: 140%;
+        margin-top: 2vw;
+        margin-right: 0;
+    }
+
+    .row2 img {
+        max-height: none;
+        width: 120%;
+    }
+
+    #content {
+        gap: 2em;
+    }
+
+    .row3 {
+        height: auto;
+        gap: 1em;
+    }
+
+    .row3 img {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,40 @@
+.row1 {
+    height: 43.5vw;
+    gap: 10vw;
+}
+
+.row2 {
+    height: 45vw;
+}
+
+.row3 img,
+.row5 img {
+    width: 100%;
+}
+
+.row4 {
+    height: 52vw;
+}
+
+@media screen and (max-width: 749px) {
+    H1 {
+        font-size: 2.5em;
+    }
+
+    .row1,
+    .row2,
+    .row4 {
+        height: auto;
+        gap: 2em;
+    }
+
+    .row1 img,
+    .row2 img,
+    .row4 img {
+        width: 100%;
+    }
+
+    #content {
+        gap: 2em;
+    }
+}

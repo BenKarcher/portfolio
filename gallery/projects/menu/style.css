@@ -1,0 +1,41 @@
+#ipad {
+    margin-right: -200px;
+    width: 60vw;
+}
+
+#video {
+    width: 30vw;
+}
+
+.row2 {
+    gap: 20vw;
+}
+
+.grid1 {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 39vw 39vw;
+    gap: 6vw;
+}
+
+.grid1 img {
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+@media screen and (max-width: 749px) {
+    #ipad {
+        width: 140vw;
+        margin-right: 0;
+    }
+
+    #video {
+        width: 80vw;
+    }
+}

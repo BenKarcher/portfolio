@@ -1,0 +1,332 @@
+#background {
+    background-color: black;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -100;
+    top: 0;
+    left: 0;
+}
+
+#back-path {
+    fill: white;
+}
+
+#content {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font: var(--font-body);
+    color: var(--font-color-1);
+}
+
+#content>#animation {
+    width: 220vw;
+    height: 90vw;
+    margin-top: calc(50vh - 45vw - var(--header-height));
+    margin-bottom: calc(65vh - 45vw);
+    object-fit: cover;
+}
+
+#content>#my-work {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font: var(--font-title);
+    color: var(--highlight-1);
+    scroll-snap-align: center none;
+}
+
+#content>#my-work>#my-work-span {
+    align-self: flex-start;
+    margin-left: 15vw;
+}
+
+#content>#my-work>#carousel {
+    position: relative;
+    width: 100%;
+    height: 45vw;
+    transform-style: preserve-3d;
+    transform: perspective(100vw);
+}
+
+#content>#my-work>#carousel>img {
+    width: 70vw;
+    height: 45vw;
+    object-fit: cover;
+    position: absolute;
+    left: 15vw;
+    top: 0;
+    transition: transform 0.5s;
+}
+
+#content>#my-work>#carousel>.img0 {
+    display: none;
+    transform: translateZ(-40vw)translateX(-45vw);
+}
+
+#content>#my-work>#carousel>.img1 {
+    transform: translateZ(-40vw)translateX(-45vw);
+}
+
+#content>#my-work>#carousel>.img2 {
+    transform: translateZ(-20vw)translateX(-45vw);
+}
+
+#content>#my-work>#carousel>.img3 {
+    transform: translateZ(0)translateX(0);
+}
+
+#content>#my-work>#carousel>.img4 {
+    transform: translateZ(-20vw)translateX(45vw);
+}
+
+#content>#my-work>#carousel>.img5 {
+    transform: translateZ(-40vw)translateX(45vw);
+}
+
+#content>#my-work>#carousel>.img6 {
+    display: none;
+    transform: translateZ(-40vw)translateX(45vw);
+}
+
+#content>#my-work>#more-work-span {
+    align-self: flex-end;
+    margin-right: 15vw;
+}
+
+#about-me {
+    padding-top: 15em;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+        "title"
+        "port"
+        "txt"
+        "but1"
+        "but2";
+}
+
+#about-me a {
+    grid-area: title;
+    font: var(--font-title);
+    color: var(--highlight-1);
+    text-align: center;
+}
+
+#about-me>#about-me-text {
+    grid-area: txt;
+    margin: 1em;
+}
+
+.button {
+    background-size: 100%, 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 60vw;
+    height: 32vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button>span {
+    margin-top: 0.5em;
+    font: var(--font-subtitle);
+    color: var(--background-1);
+    text-align: center;
+}
+
+#about-me #cv-button-area {
+    margin-bottom: 1em;
+    grid-area: but1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-me #cv-button-area>.button {
+    background-image: url("/images/buttons/button1.svg");
+}
+
+#about-me #portfolio-button-area {
+    grid-area: but2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-me #portfolio-button-area>.button {
+    background-image: url("/images/buttons/button2.svg");
+}
+
+#about-me>#portrait {
+    grid-area: port;
+    width: 90%;
+    margin: 5%;
+}
+
+#contact-me {
+    margin: 10em 0em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-me>H2 {
+    font: var(--font-title);
+    color: var(--highlight-1);
+    text-align: center;
+}
+
+#contact-me>a {
+    font: var(--font-title);
+    color: var(--highlight-2);
+    font-size: 8vw;
+    text-align: center;
+}
+
+#contact-me>span {
+    font: var(--font-body);
+    font-size: 12px;
+    color: var(--background-2);
+    text-align: center;
+}
+
+@media screen and (min-width: 750px) {
+    #content>#animation {
+        width: 100vw;
+        height: 24vw;
+        margin-top: calc(50vh - 12vw - var(--header-height));
+        margin-bottom: calc(50vh - 2vw);
+        object-fit: cover;
+    }
+
+    #content>#my-work {
+        font-size: 3vw;
+    }
+
+    #content>#my-work>#carousel>img {
+        width: 44vw;
+        height: 28vw;
+        object-fit: cover;
+        position: absolute;
+        left: 28vw;
+        top: 0;
+    }
+
+    #content>#my-work>#my-work-span {
+        margin-left: 28vw;
+    }
+
+    #content>#my-work>#carousel {
+        height: 28vw;
+    }
+
+    #content>#my-work>#carousel>.img0 {
+        display: none;
+        transform: translateZ(-60vw)translateX(-35vw);
+    }
+
+    #content>#my-work>#carousel>.img1 {
+        transform: translateZ(-60vw)translateX(-35vw);
+    }
+
+    #content>#my-work>#carousel>.img2 {
+        transform: translateZ(-40vw)translateX(-35vw);
+    }
+
+    #content>#my-work>#carousel>.img3 {
+        transform: translateZ(0)translateX(0);
+    }
+
+    #content>#my-work>#carousel>.img4 {
+        transform: translateZ(-40vw)translateX(35vw);
+    }
+
+    #content>#my-work>#carousel>.img5 {
+        transform: translateZ(-60vw)translateX(35vw);
+    }
+
+    #content>#my-work>#carousel>.img6 {
+        display: none;
+        transform: translateZ(-60vw)translateX(35vw);
+    }
+
+    #content>#my-work>#more-work-span {
+        margin-right: 28vw;
+    }
+
+    .carousel-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        fill: var(--highlight-1);
+        width: 4vw;
+    }
+
+    #carousel-left {
+        left: 3vw;
+    }
+
+    #carousel-right {
+        right: 3vw;
+    }
+
+    #about-me {
+        margin-top: calc(10vw - 10vh);
+        width: 80%;
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+            "title title port"
+            "txt txt port"
+            "but1 but2 port";
+    }
+
+    #about-me #about {
+        font-size: 4vw;
+        padding-top: 2em;
+    }
+
+    #about-me #about-me-text {
+        font-size: x-large;
+    }
+
+    #about-me #portrait {
+        align-self: center;
+    }
+
+    .button {
+        width: 18vw;
+        height: 10vw;
+    }
+
+    .button>span {
+        margin-top: 0.7em;
+        font-size: 2.5vw;
+    }
+
+    #contact-me {
+        margin: calc(15vw + 10vh) 0em calc(25vw + 10vh);
+    }
+
+    #contact-me>H2 {
+        font-size: 3vw;
+    }
+
+    #contact-me>a {
+        font-size: 5vw;
+    }
+
+    #contact-me>span {
+        font-size: 1.5vw;
+    }
+
+}

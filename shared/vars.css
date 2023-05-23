@@ -1,0 +1,79 @@
+/* oswald-200 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 200;
+    src: url('/fonts/oswald-v49-latin-200.eot');
+    /* IE9 Compat Modes */
+    src: url('/fonts/oswald-v49-latin-200.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('/fonts/oswald-v49-latin-200.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('/fonts/oswald-v49-latin-200.woff') format('woff'),
+        /* Modern Browsers */
+        url('/fonts/oswald-v49-latin-200.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('/fonts/oswald-v49-latin-200.svg#Oswald') format('svg');
+    /* Legacy iOS */
+}
+
+/* oswald-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/fonts/oswald-v49-latin-600.eot');
+    /* IE9 Compat Modes */
+    src: url('/fonts/oswald-v49-latin-600.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('/fonts/oswald-v49-latin-600.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('/fonts/oswald-v49-latin-600.woff') format('woff'),
+        /* Modern Browsers */
+        url('/fonts/oswald-v49-latin-600.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('/fonts/oswald-v49-latin-600.svg#Oswald') format('svg');
+    /* Legacy iOS */
+}
+
+/* wix-madefor-display-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Wix Madefor Display';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/wix-madefor-display-v9-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: url('/fonts/wix-madefor-display-v9-latin-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('/fonts/wix-madefor-display-v9-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('/fonts/wix-madefor-display-v9-latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('/fonts/wix-madefor-display-v9-latin-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('/fonts/wix-madefor-display-v9-latin-regular.svg#WixMadeforDisplay') format('svg');
+    /* Legacy iOS */
+}
+
+:root {
+    --background-1: #000000;
+    --background-2: #ffffff;
+    --font-color-1: #ffffff;
+    --highlight-1: #EF5D9E;
+    --highlight-2: #FAF49D;
+
+    /* --font-title: 600 32px "bebas-neue-pro", "Bebas Neue", sans-serif; */
+    --font-title: 600 32px "Oswald", sans-serif;
+    /* --font-subtitle: 200 32px "bebas-neue-pro", "Bebas Neue", sans-serif; */
+    --font-subtitle: 200 32px "Oswald", sans-serif;
+    /* --font-body: 400 18px "degular-display", "Poppins", sans-serif; */
+    --font-body: 400 18px "Wix Madefor Display", sans-serif;
+
+    --mobile-width: 750px;
+}

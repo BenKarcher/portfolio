@@ -1,0 +1,63 @@
+.grid1 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.button {
+    margin-top: 1em;
+    background-size: 100%, 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 6em;
+    height: 3.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/button2.svg");
+    font: var(--font-subtitle);
+}
+
+#mac-container {
+    position: relative;
+    display: flex;
+    padding-bottom: 1em;
+}
+
+#mac-container>a {
+    position: absolute;
+    bottom: 0;
+    right: 1em;
+    color: gray;
+    font-size: 0.8em;
+}
+
+.button>span {
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+#mac {
+    align-self: end;
+}
+
+.grid2 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 6vw;
+}
+
+.grid2 img {
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+}
+
+.grid2 div {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+
+@media screen and (max-width: 749px) {
+    .grid2 {
+        gap: 2em;
+    }
+}

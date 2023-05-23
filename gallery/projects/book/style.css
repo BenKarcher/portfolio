@@ -1,0 +1,34 @@
+.row1 {
+    height: 43.5vw;
+    gap: 10vw;
+}
+
+.row2 {
+    height: 44vw;
+    gap: 10vw;
+}
+
+.row2 img {
+    margin-top: -5vw;
+}
+
+@media screen and (max-width: 749px) {
+
+    .row1,
+    .row2 {
+        height: auto;
+    }
+
+    .row2 {
+        flex-direction: column-reverse;
+    }
+
+    .row1 img,
+    .row2 img {
+        width: 80vw;
+    }
+
+    #content {
+        gap: 2em;
+    }
+}
