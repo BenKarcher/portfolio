@@ -122,7 +122,7 @@ body {
     }
 
     .gallery-wrapper>span {
-        font-size: 1.3em;
+        font-size: 2vw;
     }
 
     .short-wrapper {
@@ -179,17 +179,5 @@ body {
 
     #p10 {
         grid-area: p10;
-    }
-}
-
-@media screen and (min-width: 950px) {
-    .gallery-wrapper>span {
-        font-size: 1.7em;
-    }
-}
-
-@media screen and (min-width: 1500px) {
-    .gallery-wrapper>span {
-        font-size: 2.2em;
     }
 }
