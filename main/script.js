@@ -76,6 +76,7 @@ function update_carousel() {
     images[5].classList = "carousel-image img5";
     images[6].classList = "carousel-image img6";
     images[7].classList = "carousel-image img6";
+    images[8].classList = "carousel-image img6";
 }
 function carousel_left() {
     images.unshift(images.pop());
@@ -110,7 +111,7 @@ init.push(function () {
     window.requestAnimationFrame(draw_fun);
 
     let collection = document.getElementsByClassName("carousel-image");
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < 9; i++) {
         images.push(collection[i]);
     }
 

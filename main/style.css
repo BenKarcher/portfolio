@@ -259,6 +259,11 @@
         transform: translateZ(-60vw)translateX(35vw);
     }
 
+    #content>#my-work>#carousel>.img7 {
+        display: none;
+        transform: translateZ(-60vw)translateX(35vw);
+    }
+
     #content>#my-work>#more-work-span {
         margin-right: 28vw;
     }
