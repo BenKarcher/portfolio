@@ -1,0 +1,55 @@
+.row1 {
+    height: 28vw;
+    gap: 5vw;
+}
+
+.row2 {
+    padding-top: 3vw;
+    /* text-align: right; */
+    height: 30vw;
+    gap: 10vw
+}
+
+
+.row3 {
+    padding-top: 3vw;
+    gap: 10vw;
+    height: 29vw;
+}
+
+.rows {
+    height: 28vw;
+}
+
+.row {
+    align-items: center;
+}
+
+.row4 {
+    gap: 10vw;
+    height: 25vw;
+}
+
+@media screen and (max-width: 749px) {
+
+    .row1,
+    .row2,
+    .row3,
+    .rows,
+    .row4 {
+        height: auto;
+    }
+
+    img,
+    #logostack img {
+        width: 80vw;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    .row4 {
+        gap: 12vw;
+    }
+}
